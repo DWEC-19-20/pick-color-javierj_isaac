@@ -1,8 +1,75 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <style>
+        body{
+            background-color: aquamarine;
+            margin: 60px;
+        }
+        .rgb{
+            background-color: darkred;
+        }
+        .centrado{
+            text-align: center;
+        }
+    </style>
 </head>
 <html>
-    <body>
-    </body>
-</html>
+
+<body>
+    <center>
+        <table border 2px>
+
+            <tr>
+                <th colspan="2">COLOR PICKER</th>
+            </tr>
+
+            <tr>
+                <td class="centrado" bgcolor='red'><label for="r">R</label></td>
+                <td><input name="r" id="r"></input></td>
+            </tr>
+
+
+            <tr>
+
+                <td class="centrado" bgcolor='green'><label for="g">G</label></td>
+                <td><input name="g" id="g"></input></td>
+
+            </tr>
+
+            <tr>
+                <td class="centrado" bgcolor='blue'><label for="b">B</label></td>
+                <td><input name="b" id="b"></input></td>
+            </tr>
+
+            <tr>
+                <td><label for="hex">RGB a hexadecimal</label></td>
+                <td><input name="hex" id="hex" readonly></input></td>
+            </tr>
+
+            <tr>
+                <td>Resultado</td>
+                <td id="color1"></td>
+
+            </tr>
+            <tr>
+                <td><label for="h">Hexadecimal a RGB</label></td>
+                <td><input name="hex2" id="hex2" value="#"></input></td>
+            </tr>
+
+            <tr>
+                <td class="rgb centrado"><label>RGB</label></td>
+                <td><input name="r" id="red"></input></td>
+            </tr>
+
+        </table>
+
+        <button name="enviar" id="enviar">Convertir</button>
+
+
+
+        <script src="js/rgb.js"></script>
+    </center>
+
+</body></html>
